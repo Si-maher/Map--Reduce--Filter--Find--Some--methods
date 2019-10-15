@@ -24,5 +24,12 @@ officersId.push(item.id)
 })
 console.log(officersId);
 
+// Now let us use the same array of objects, but this time using the map method to extract the data 
 
+let officersIdMap = officers.map(function (item) {
+    return item.id
+})
 
+console.log(officersIdMap);
+
+// Here, the callback runs for each value and returns each new value in the resulting Array 
