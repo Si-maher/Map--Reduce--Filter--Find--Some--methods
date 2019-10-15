@@ -33,3 +33,8 @@ let officersIdMap = officers.map(function (item) {
 console.log(officersIdMap);
 
 // Here, the callback runs for each value and returns each new value in the resulting Array 
+
+// Same object but now using an arrow function 
+
+const officerIdMapArrow =officers.map(item => item.id)
+console.log(officerIdMapArrow);
