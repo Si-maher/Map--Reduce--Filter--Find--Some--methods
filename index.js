@@ -38,3 +38,36 @@ console.log(officersIdMap);
 
 const officerIdMapArrow =officers.map(item => item.id)
 console.log(officerIdMapArrow);
+
+
+// Lets use Reduce to return some Data, in this case the pilots years of experience
+
+let pilots = [
+    {
+        id:10,
+        name:'Bob',
+        years:1
+    },
+    {
+        id:2,
+        name:'Todd',
+        years:2
+    },
+    {
+        id:3,
+        name:'Paul',
+        years:3
+    },
+    {
+        id:4,
+        name:'Dave',
+        years:4
+    },
+]
+
+let totalYears = pilots.reduce(function (accumulator, pilot) {
+    return accumulator + pilot.years
+}, 0)
+console.log(totalYears);
+
+// Like map, reduce also uses callback as well as an accumulator. 
