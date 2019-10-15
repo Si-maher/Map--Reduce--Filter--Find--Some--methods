@@ -71,3 +71,8 @@ let totalYears = pilots.reduce(function (accumulator, pilot) {
 console.log(totalYears);
 
 // Like map, reduce also uses callback as well as an accumulator. 
+
+// Arrow function for same object
+
+let totalYearsArrow = pilots.reduce((acc, pilot) => acc + pilot.years,0)
+console.log(totalYearsArrow);
