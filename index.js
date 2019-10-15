@@ -76,3 +76,10 @@ console.log(totalYears);
 
 let totalYearsArrow = pilots.reduce((acc, pilot) => acc + pilot.years,0)
 console.log(totalYearsArrow);
+
+// Now let us find the highest number for years of experience using reduce
+
+let mostExPilot = pilots.reduce(function(oldest, pilot) {
+    return (oldest.years || 0) > pilot.years ? oldest : pilot
+}, {})
+console.log(mostExPilot);
