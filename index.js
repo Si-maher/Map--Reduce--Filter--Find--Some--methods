@@ -83,3 +83,29 @@ let mostExPilot = pilots.reduce(function(oldest, pilot) {
     return (oldest.years || 0) > pilot.years ? oldest : pilot
 }, {})
 console.log(mostExPilot);
+
+// ###################################### 
+// Revision 
+let booksId = []
+let books = [
+    {id:1, name:'Harry Potter'},
+    {id:2, name:'LOTR'},
+    {id:3, name:'WOT'}
+]
+
+books.forEach(function (item) {
+    booksId.push(item.name)
+})
+console.log(booksId);
+console.log(booksId);
+
+let booksMap = [
+    {id:1, name:'Jason Bourne'},
+    {id:2, name:'Gandalf'},
+    {id:3, name:'Megatron'}
+]
+
+let booksIdMap = booksMap.map(function (item) {
+    return item.name
+})
+console.log(booksIdMap);
