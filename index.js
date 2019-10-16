@@ -260,3 +260,9 @@ let operatives = [
     console.log(checkPilots);
 
     
+// Now let us use some() 
+
+let arrayContainsPilots = operatives.some(function(item){
+    return item.pilot
+})
+console.log(arrayContainsPilots);
