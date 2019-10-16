@@ -109,3 +109,49 @@ let booksIdMap = booksMap.map(function (item) {
     return item.name
 })
 console.log(booksIdMap);
+
+// ########################################## 
+
+// Now lets use the filter method. This allows us to extract some of the elements within an array. For instance, below we have an array of objects with two factions; Rebels and Empire.
+// Filter allows us to seperate these and put them into new arrays.
+let cadets = [
+    {
+        id:2, 
+        name:'Wedge Antilles',
+        faction:'Empire'
+
+    },
+    {
+        id:8, 
+        name:'Ciena Ree',
+        faction:'Rebels'
+
+    },
+    {
+        id:10, 
+        name:'Iden Vero',
+        faction:'Empire'
+
+    },
+    {
+        id:66, 
+        name:'Thane Kyrell',
+        faction:'Rebels'
+
+    },
+]
+
+// Rebel array 
+let rebels = cadets.filter(function(item) {
+    return item.faction === 'Rebels'
+})
+
+console.log(rebels);
+
+// Empire array 
+
+let empire = cadets.filter(function (item) {
+    return item.faction === 'Empire'
+})
+
+console.log(empire);
