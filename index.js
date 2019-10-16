@@ -267,7 +267,7 @@ let arrayContainsPilots = operatives.some(function(item){
 })
 console.log(arrayContainsPilots);
 
-// Because the array does contain pilot, it return a Boolean of true
+// Because the array does contain pilot, it return a Boolean of true. The function will run and as soon as a condition is met, it will stop.
 
 let arrayContainsPilots1 = operatives.some(function(item) {
     return item.driver
@@ -275,3 +275,11 @@ let arrayContainsPilots1 = operatives.some(function(item) {
 console.log(arrayContainsPilots1);
 
 // Returns false because driver does not exist in the array
+
+// every() 
+// Every, as the name suggests will run through and check all items, regardless if true or false.
+
+let arrayContainsPilots2 = operatives.every(function(item) {
+    return item.pilot
+})
+console.log(arrayContainsPilots2);
