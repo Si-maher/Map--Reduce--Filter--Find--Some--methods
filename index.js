@@ -283,3 +283,12 @@ let arrayContainsPilots2 = operatives.every(function(item) {
     return item.pilot
 })
 console.log(arrayContainsPilots2);
+
+// find() 
+
+// This method finds what ever value you are looking for and will return the object
+
+let findPilot = operatives.find(function(item) {
+    return item.pilot
+})
+console.log(findPilot);
