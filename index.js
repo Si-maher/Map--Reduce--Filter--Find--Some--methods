@@ -155,3 +155,11 @@ let empire = cadets.filter(function (item) {
 })
 
 console.log(empire);
+
+// And now the same but with arrow functions 
+
+const rebelsArrow = cadets.filter(item => item.faction === 'Rebels')
+console.log(rebelsArrow);
+
+const empireArrow =cadets.filter(item => item.faction === 'Empire')
+console.log(empireArrow);
