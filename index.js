@@ -243,7 +243,7 @@ console.log(jediPersonnelArrow);
 // ###################################### 
 
 // some() method 
-// This method helps you to determine if one or more values correspond with what you are looking for. For example, we can use some() to see if the operatives array contains any pilots
+// This method helps you to determine if one or more values correspond with what you are looking for. For example, we can use some() to see if the operatives array contains any pilots. Must include a return
 
 let checkPilots= []
 let operatives = [
@@ -266,3 +266,12 @@ let arrayContainsPilots = operatives.some(function(item){
     return item.pilot
 })
 console.log(arrayContainsPilots);
+
+// Because the array does contain pilot, it return a Boolean of true
+
+let arrayContainsPilots1 = operatives.some(function(item) {
+    return item.driver
+})
+console.log(arrayContainsPilots1);
+
+// Returns false because driver does not exist in the array
