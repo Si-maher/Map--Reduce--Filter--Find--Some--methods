@@ -240,4 +240,23 @@ let jediPersonnelArrow = personnel.filter(item => item.isForceUser).map(item => 
 
 console.log(jediPersonnelArrow);
 
+// ###################################### 
 
+// some() method 
+// This method helps you to determine if one or more values correspond with what you are looking for. For example, we can use some() to see if the operatives array contains any pilots
+
+let checkPilots= []
+let operatives = [
+    { id: 12, name: 'Baze Malbus', pilot: false },
+    { id: 44, name: 'Bodhi Rook', pilot: true },
+    { id: 59, name: 'Chirrut Îmwe', pilot: false },
+    { id: 122, name: 'Jyn Erso', pilot: false }
+];
+        operatives.forEach(function(item) {
+      if(item.pilot === true) {
+          checkPilots.push(item.pilot)
+        }
+    })
+    console.log(checkPilots);
+
+    
