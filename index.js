@@ -239,3 +239,5 @@ console.log(jediPersonnelChain);
 let jediPersonnelArrow = personnel.filter(item => item.isForceUser).map(item => item.pilotingScore + item.shootingScore).reduce((acc, item) => acc + item, 0)
 
 console.log(jediPersonnelArrow);
+
+
