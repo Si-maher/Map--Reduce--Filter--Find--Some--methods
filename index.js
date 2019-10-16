@@ -223,3 +223,15 @@ let jediTotalScore = jediScore.reduce(function(acc, item) {
 
 console.log(jediTotalScore);
 
+// Now lets chain them! 
+
+let jediPersonnelChain = personnel.filter(function (item){
+    return item.isForceUser === false
+}).map(function( item) {
+    return item.pilotingScore + item.shootingScore
+}).reduce(function (acc, item) {
+   return acc + item 
+}, 0)
+console.log(jediPersonnelChain);
+
+
