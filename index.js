@@ -163,3 +163,63 @@ console.log(rebelsArrow);
 
 const empireArrow =cadets.filter(item => item.faction === 'Empire')
 console.log(empireArrow);
+
+
+// We can combine these methods because they are all called on Arrays, and filter() and map() both return new arrays, we can chain them 
+
+let personnel = [
+    {
+        id:5,
+        name: 'Luke Skywalker',
+        pilotingScore: 98,
+        shootingScore: 56,
+        isForceUser: true,
+    },
+    {
+        id:82,
+        name: 'Sabine Wren',
+        pilotingScore: 73,
+        shootingScore: 99,
+        isForceUser: false,
+    },
+    {
+        id:22,
+        name: 'Zeb Orellios',
+        pilotingScore: 20,
+        shootingScore: 59,
+        isForceUser: false,
+    },
+    {
+        id:15,
+        name: 'Ezra Bridger',
+        pilotingScore: 43,
+        shootingScore: 67,
+        isForceUser: true,
+    },
+    {
+        id:5,
+        name: 'Caleb Dume',
+        pilotingScore: 71,
+        shootingScore: 85,
+        isForceUser: true,
+    },
+]
+
+let jediPersonnel = personnel.filter(function (item) {
+    return item.isForceUser 
+})
+console.log(jediPersonnel);
+
+let jediScore = jediPersonnel.map(function(item) {
+    return item.pilotingScore + item.shootingScore
+})
+
+console.log(jediScore);
+
+
+let jediTotalScore = jediScore.reduce(function(acc, item) {
+    return acc + item
+},0)
+
+console.log(jediTotalScore);
+
